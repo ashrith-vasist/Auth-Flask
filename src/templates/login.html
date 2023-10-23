@@ -33,21 +33,20 @@
       <div class="card" style="width: 100%;">
         <div class="card-body">
           <h5 class="card-title">Login Form</h5>
-           <form onsubmit="return false;" id="form">
-              <div class="mb-3">
-               <label for="email" class="form-label">Email address</label>
-               <input type="email" class="form-control" id="email">
-              </div>
-              <div class="mb-3">
+          <form method="POST">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="username">
+            </div>
+            <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password">
-              </div>
-               <div class="alert alert-danger" role="alert"  id="error" style="display: none;"></div>
-               <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>              
-               <button type="submit" class="btn btn-primary">Login</button>
-               
-               
-            </form>           
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+            <div class="alert alert-danger" role="alert" id="error" style="display: none;"></div>
+            <div class="alert alert-success" role="alert" id="success" style="display: none;"></div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+                  
         </div>
        </div>
     </div>
