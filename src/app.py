@@ -39,7 +39,7 @@ def login():
       username = request.form['username']
       password = request.form['password']
       user = [x for x in users if x.username == username][0]
-      if user and user.password == password and user.username == usernamei:
+      if user and user.password == password and user.username == username:
          session['user_id']=user.id
          return redirect(url_for('Profile'))
       return redirect(url_for('login'))
